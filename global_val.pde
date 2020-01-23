@@ -22,6 +22,8 @@ float offset = 100;
 
 //----------BRICK VALUES---------------
 brick [][] brickGrid; 
+int gridW = 160;
+int gridH = 40;
 int brickC = 10;
 int brickR = 5;
 float brickW = 155; 
@@ -29,7 +31,17 @@ float brickH = 35;
 //-------------------------------------
 
 //----------SCOREBOARD-----------------
-int scoreX;
-int scoreY;
+int scoreX = 1400;
+int scoreY = 990;
 int score=0;
 scoreboard s1;
+//-------------------------------------
+//----------HEALTH--------------------
+health h1;
+int health;
+int healthx;
+int healthy=950;
+int hh = 50;
+int hw = 50;
+int oob=0;
+PImage heart;

@@ -7,7 +7,7 @@ class scoreboard {
   }
   void display() {
     text(score, scoreX, scoreY);
-    textSize(100);
+    textSize(50);
     fill (255);
   }
 }

@@ -38,9 +38,13 @@ class ball {
     if (ballY >= height-ballR || ballY <= 0+ballR) {
       speedY *= -1;
     }
+    if (ballY >= height-ballR){
+    oob+=1;
+    println(oob);
+    }
   }
 
-  void bounce(player other) {
+  void collision(player other) {
     if (ballY + ballR > other.playerY-other.playerH/2 && ballX > other.playerX - other.playerW/2 && ballX  < other.playerX + other.playerW/2) {
       speedY *= -1;
       speedX = (ballX - (other.pm))/speedValue;
